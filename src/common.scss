@@ -2,4 +2,6 @@
 $grey: #b8b6b6;
 
 $pagePadding: 20px;
-$companyListColumns: repeat(6, 1fr);
+// $companyListColumns: repeat(6, 1fr);
+$companyListColumns: 24px 75px 1fr 1fr 1fr 24px;
+$listElPadding: 12px 16px;

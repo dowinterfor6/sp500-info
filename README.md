@@ -16,19 +16,20 @@ Main watchlist
 
 - OVERVIEW
   - Symbol
-  - Name
-  - Sector
-  - Price + change?
-  - Market Cap (?)
+  - Price + change
+  - Volume
   - Dividend yield
 
 Main watchlist detail
 
 - OVERVIEW
+  - Name
+  - Market Cap
+  - Country: Exchange
+  - Sector
   - Description
-  - Exchange
   - Industry
-  - Dividends paid ? (Shares outstanding \* dividend per share?)
+  - Short Percent Float
 - INCOME_STATEMENT
   - Annual Report Date
   - Net Income

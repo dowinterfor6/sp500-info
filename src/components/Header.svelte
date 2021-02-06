@@ -1,5 +1,5 @@
 <nav>
-  <h1>Stonks</h1>
+  <h1>S&P 500 Companies</h1>
   <span>by dowinterfor6</span>
 </nav>
 
@@ -9,14 +9,15 @@
   nav {
     display: flex;
     width: 100%;
-    background: black;
-    color: white;
-    padding: 10px $pagePadding;
+    // background: black;
+    // color: white;
+    padding: 30px $pagePadding;
     justify-content: space-between;
     align-items: center;
 
     h1 {
       margin: 0;
+      font-size: 48px;
     }
   }
 </style>

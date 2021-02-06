@@ -21,17 +21,16 @@
 </script>
 
 <section>
-  <h3>All Companies</h3>
-  {#if Object.keys(companyInformation).length > 0}
-    <ul>
-      <ListHeader />
+  <ul>
+    <ListHeader />
+    {#if Object.keys(companyInformation).length > 0}
       {#each parsedCompanyInfo as companyInfo}
         <ListItem {companyInfo} />
       {/each}
-    </ul>
-  {:else}
-    <div class="loading">Loading...</div>
-  {/if}
+    {:else}
+      <div class="loading">Loading...</div>
+    {/if}
+  </ul>
 </section>
 
 <style lang="scss">
@@ -39,6 +38,7 @@
 
   section {
     padding: 10px $pagePadding;
+    height: 100%;
 
     ul {
       list-style: none;

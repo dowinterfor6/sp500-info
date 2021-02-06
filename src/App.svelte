@@ -4,6 +4,7 @@
   import CompanyList from "./components/CompanyList.svelte";
   import Header from "./components/Header.svelte";
   import { companyInformationStore } from "./store/store";
+  import Chip from "./components/Chip.svelte";
 
   onMount(async () => {
     const data = await getSp500Data();
@@ -13,7 +14,9 @@
 
 <main>
   <Header />
-  <h1>S&P 500 Companies Information</h1>
+  <div class="chip-container">
+    <Chip chipLabel={"Watchlist"} />
+  </div>
   <CompanyList />
 </main>
 
@@ -30,7 +33,9 @@
   }
 
   :global(h1, h2, h3, h4, h5) {
-    font-family: "Montserrat", sans-serif;
+    // font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   :global(p, span, div, ul, li) {
@@ -40,10 +45,9 @@
   main {
     height: 100%;
     padding: 0;
-    overflow: hidden;
+  }
 
-    h1 {
-      padding: 0 $pagePadding;
-    }
+  .chip-container {
+    padding: 0 $pagePadding;
   }
 </style>
