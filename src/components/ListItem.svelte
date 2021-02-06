@@ -158,7 +158,7 @@
         transition: 0.2s all;
 
         &.expanded {
-          transform: rotateZ(180deg);
+          transform: rotateZ(-180deg);
         }
       }
     }
@@ -178,6 +178,10 @@
       &.show {
         max-height: 100vh;
       }
+    }
+
+    &:hover {
+      background: $lighterGrey;
     }
   }
 </style>

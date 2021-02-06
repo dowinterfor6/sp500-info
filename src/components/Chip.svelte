@@ -25,6 +25,10 @@
     cursor: pointer;
     transition: 0.2s background;
 
+    &:hover {
+      background: $lightGrey;
+    }
+
     &.selected {
       background: $grey;
     }
