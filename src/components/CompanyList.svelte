@@ -4,6 +4,7 @@
   import { companyInformationStore } from "../store/store";
   import ListHeader from "./ListHeader.svelte";
   import ListItem from "./ListItem.svelte";
+  import Loading from "./Loading.svelte";
 
   let companyInformation = {};
   const unsubscribeFromCompanyInformationStore = companyInformationStore.subscribe(
@@ -28,7 +29,10 @@
         <ListItem {companyInfo} />
       {/each}
     {:else}
-      <div class="loading">Loading...</div>
+      <!-- TODO: Placeholder glowing bars instead of loading -->
+      <div class="loading-container">
+        <Loading />
+      </div>
     {/if}
   </ul>
 </section>
@@ -44,6 +48,13 @@
       list-style: none;
       padding: 0;
       margin: 0;
+
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+      }
     }
   }
 </style>
